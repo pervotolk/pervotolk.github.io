@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    background-color: #eeeeee;
+}
+
+#wallindex {
+    background-color: #ffffff;
+    width: 1200px;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+            "hd hd hd hd hd"
+            "cn cn cn cn cn";
+    margin: 0 auto;
+}
+
+/* HEAD */
+
+#wallhead {
+    grid-area: hd;
+}
+
+#wallhead img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+#gerbpt img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 90px;
+    margin-left: 100px;
+    border-radius: 50px;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+#gerbpt img:hover {
+    width: 150px;
+    height: 150px;
+    margin-top: 65px;
+    margin-left: 75px;
+    border-radius: 75px;
+}
+
+#gerbga img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 90px;
+    margin-left: 1000px;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+#gerbga img:hover {
+    width: 150px;
+    height: 150px;
+    margin-top: 65px;
+    margin-left: 975px;
+}
+
+#nametxt {
+    position: absolute;
+    font-size: 4em;
+    color: #FFD42A;
+    font-family: RobotoSlabBold, Georgia serif;
+    text-shadow: 1px 1px 1px #000000, 0 0 1em #039be5;
+    text-transform: uppercase;
+    margin-left: 380px;
+    margin-top: 90px;
+
+}
+
+#schooltxt {
+    position: absolute;
+    font-size: 2.0em;
+    color: #ffffff;
+    font-family: RobotoSlabRegular, Georgia serif;
+    text-shadow: 1px 1px 1px #000000, 0 0 1em #039be5;
+    text-transform: uppercase;
+    margin-left: 405px;
+    margin-top: 290px;
+}
+
+#citytxt {
+    position: absolute;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: RobotoSlabRegular, Georgia serif;
+    text-shadow: 1px 1px 1px #000000, 0 0 1em #039be5;
+    text-transform: uppercase;
+    margin-left: 475px;
+    margin-top: 330px;
+}
+
+/* HEAD END */
+
+#wallcontent {
+    background-color: #1565c0;
+    grid-area: cn;
+    font-family: RobotoSlabRegular, Georgia serif;
+}
+
+#wallcontent li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30.6%;
+    padding:15px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#wallcontent li:hover {
+    background-color: #0d47a1;
+}
+
+#wallcontent a {
+    color: #ffffff;
+    text-decoration: none;
+}
